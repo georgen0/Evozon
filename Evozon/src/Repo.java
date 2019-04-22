@@ -34,7 +34,7 @@ public class Repo {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] item = line.split(",");
-                if (str.contains(item[0]))
+                if (item[0].contains(str))
                     return line;
             }
             throw new IOException();
